@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite parallel="classes" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" parallel="classes" name="Test(failed)">
+    <groups>
+      <run>
+        <include name="regression"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="testngcheck.CheckProject">
+        <methods>
+          <include name="verifyUrlOfPage"/>
+          <include name="verifyTitleofPage"/>
+        </methods>
+      </class> <!-- testngcheck.CheckProject -->
+      <class name="testngcheck.Assrt">
+        <methods>
+          <include name="verifyTitleofPage"/>
+          <include name="verifyUrlOfPage"/>
+        </methods>
+      </class> <!-- testngcheck.Assrt -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
